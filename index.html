@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SweetLab — Premium Bakery & Dessert Experience</title>
+  <meta name="description" content="SweetLab: A luxury bakery platform for custom cake design, pre-orders, AI flavor recommendations, and deliciously futuristic dessert experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════ NAV ═══════════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-brand">
+    <div class="nav-logo">
+      <span class="logo-icon">🍰</span>
+      <div class="brand-text">
+        <span class="brand-name">SweetLab</span>
+        <span class="brand-tag">Artisan Bakery</span>
+      </div>
+    </div>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home" class="nav-link active" id="nl-home">Home</a></li>
+    <li><a href="#showcase" class="nav-link" id="nl-showcase">Gallery</a></li>
+    <li><a href="#preorder" class="nav-link" id="nl-preorder">Pre-Order</a></li>
+    <li><a href="#designer" class="nav-link" id="nl-designer">Designer</a></li>
+    <li><a href="#tracking" class="nav-link" id="nl-tracking">Tracking</a></li>
+    <li><a href="#loyalty" class="nav-link" id="nl-loyalty">Rewards</a></li>
+    <li><a href="#dashboard" class="nav-link" id="nl-dashboard">Dashboard</a></li>
+  </ul>
+  <div class="nav-actions">
+    <div class="nav-loyalty-badge" id="navLoyaltyBadge">
+      <span class="loyalty-points-nav">2,450 pts</span>
+      <span class="loyalty-star">⭐</span>
+    </div>
+    <button class="btn-cart" id="cartBtn">
+      🛒
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+    <button class="btn-nav-cta" id="navOrderBtn">Order Now</button>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ═══════════════════════════════════════════ HERO ══════════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-bg-anim">
+    <div class="floating-circle fc1"></div>
+    <div class="floating-circle fc2"></div>
+    <div class="floating-circle fc3"></div>
+    <div class="floating-circle fc4"></div>
+    <div class="floating-circle fc5"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-badge animate-in">✨ Artisan • Premium • Handcrafted</div>
+    <h1 class="hero-title animate-in delay-1">
+      Where Every Bite<br />
+      <em>Tells a Story</em>
+    </h1>
+    <p class="hero-subtitle animate-in delay-2">
+      Experience the future of artisan baking — AI-powered flavor recommendations, custom cake design, and real-time kitchen magic. Because you deserve more than just dessert.
+    </p>
+    <div class="hero-actions animate-in delay-3">
+      <button class="btn-primary" id="heroOrderBtn">Design Your Cake</button>
+      <button class="btn-secondary" id="heroExploreBtn">Explore Menu</button>
+    </div>
+    <div class="hero-stats animate-in delay-4">
+      <div class="stat-card">
+        <span class="stat-num" data-target="12400">0</span>
+        <span class="stat-label">Happy Customers</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num" data-target="350">0</span>
+        <span class="stat-label">Cake Varieties</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num" data-target="98">0</span>
+        <span class="stat-label">% Satisfaction</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num" data-target="7">0</span>
+        <span class="stat-label">Years of Craft</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual animate-in delay-2">
+    <div class="cake-showcase-card">
+      <div class="cake-showcase-glow"></div>
+      <div class="cake-3d">🎂</div>
+      <div class="cake-sparkles">
+        <div class="sparkle s1">✨</div>
+        <div class="sparkle s2">🌟</div>
+        <div class="sparkle s3">✨</div>
+        <div class="sparkle s4">⭐</div>
+      </div>
+      <div class="cake-showcase-info">
+        <h3>Signature Velvet Dream</h3>
+        <p>Red Velvet · Cream Cheese · Gold Leaf</p>
+        <span class="cake-price">₹3,499</span>
+      </div>
+      <div class="ai-badge">🤖 AI Pick of the Day</div>
+    </div>
+    <div class="floating-sweet-cards">
+      <div class="sweet-float-card sfc1">🧁 Cupcakes — 24 varieties</div>
+      <div class="sweet-float-card sfc2">🍰 Cheesecakes — Seasonal</div>
+      <div class="sweet-float-card sfc3">🎂 Custom Cakes — 2hr design</div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ ANIMATED DESSERT SHOWCASE ═══════════════════════════════════ -->
+<section class="showcase-section" id="showcase">
+  <div class="section-header">
+    <div class="section-tag">🍩 Our Gallery</div>
+    <h2 class="section-title">Artisan <em>Creations</em></h2>
+    <p class="section-sub">Each creation is a masterpiece — designed with love, baked with precision</p>
+  </div>
+
+  <div class="showcase-filter">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="cakes">Cakes</button>
+    <button class="filter-btn" data-filter="cupcakes">Cupcakes</button>
+    <button class="filter-btn" data-filter="pastries">Pastries</button>
+    <button class="filter-btn" data-filter="seasonal">Seasonal</button>
+  </div>
+
+  <div class="showcase-grid" id="showcaseGrid">
+    <!-- Dynamically inserted by JS -->
+  </div>
+
+  <div class="showcase-marquee">
+    <div class="marquee-track">
+      <span>🍰 Red Velvet</span><span>🎂 Chocolate Truffle</span><span>🧁 Vanilla Bean</span>
+      <span>🍩 Glazed Donut</span><span>🥐 Butter Croissant</span><span>🍮 Crème Brûlée</span>
+      <span>🍰 Tiramisu</span><span>🎂 Black Forest</span><span>🧁 Salted Caramel</span>
+      <span>🍩 Matcha Dream</span><span>🥐 Almond Praline</span><span>🍮 Passion Fruit</span>
+      <span>🍰 Red Velvet</span><span>🎂 Chocolate Truffle</span><span>🧁 Vanilla Bean</span>
+      <span>🍩 Glazed Donut</span><span>🥐 Butter Croissant</span><span>🍮 Crème Brûlée</span>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ CAKE PRE-ORDER SYSTEM ═══════════════════════════════════════ -->
+<section class="preorder-section" id="preorder">
+  <div class="section-header">
+    <div class="section-tag">📅 Advance Booking</div>
+    <h2 class="section-title">Cake <em>Pre-Order</em></h2>
+    <p class="section-sub">Reserve your dream cake up to 30 days in advance with guaranteed delivery</p>
+  </div>
+
+  <div class="preorder-layout">
+    <div class="preorder-form-card">
+      <h3>Book Your Cake</h3>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Customer Name</label>
+          <input type="text" id="po-name" placeholder="Your full name" class="form-input" />
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" id="po-phone" placeholder="+91 XXXXX XXXXX" class="form-input" />
+        </div>
+        <div class="form-group">
+          <label>Cake Type</label>
+          <select id="po-type" class="form-input">
+            <option value="">Select cake type</option>
+            <option>Red Velvet</option>
+            <option>Chocolate Truffle</option>
+            <option>Black Forest</option>
+            <option>Vanilla Bean</option>
+            <option>Mango Delight</option>
+            <option>Custom Design</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Size</label>
+          <select id="po-size" class="form-input">
+            <option value="">Select size</option>
+            <option>0.5 kg (Serves 4)</option>
+            <option>1 kg (Serves 8)</option>
+            <option>1.5 kg (Serves 12)</option>
+            <option>2 kg (Serves 16)</option>
+            <option>3 kg (Serves 24)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Delivery Date</label>
+          <input type="date" id="po-date" class="form-input" />
+        </div>
+        <div class="form-group">
+          <label>Delivery Time</label>
+          <select id="po-time" class="form-input">
+            <option>Morning (9AM – 12PM)</option>
+            <option>Afternoon (12PM – 4PM)</option>
+            <option>Evening (4PM – 8PM)</option>
+          </select>
+        </div>
+        <div class="form-group full-width">
+          <label>Message on Cake</label>
+          <input type="text" id="po-msg" placeholder="Happy Birthday, Sarah! 🎂" class="form-input" />
+        </div>
+        <div class="form-group full-width">
+          <label>Special Instructions</label>
+          <textarea id="po-instructions" placeholder="Eggless, nut-free, dietary preferences..." class="form-input form-textarea"></textarea>
+        </div>
+      </div>
+      <div class="preorder-price-preview" id="pricePreview">
+        <div class="price-row"><span>Base Price</span><span id="basePrice">₹0</span></div>
+        <div class="price-row"><span>Customization</span><span id="customPrice">₹0</span></div>
+        <div class="price-row total"><span>Total Estimate</span><span id="totalPrice">₹0</span></div>
+      </div>
+      <button class="btn-primary full-width" id="placeOrderBtn">🎂 Place Pre-Order</button>
+    </div>
+
+    <div class="preorder-sidebar">
+      <div class="festival-predictor-card">
+        <div class="card-header-icon">🎉</div>
+        <h4>Festival Order Predictor</h4>
+        <p>Upcoming high-demand periods based on AI analysis</p>
+        <div class="festival-list" id="festivalList">
+          <!-- JS injected -->
+        </div>
+      </div>
+
+      <div class="ai-recommender-card">
+        <div class="ai-orb">🤖</div>
+        <h4>AI Flavor Match</h4>
+        <p>Tell us your mood and we'll find your perfect cake!</p>
+        <div class="mood-buttons" id="moodButtons">
+          <button class="mood-btn" data-mood="romantic">💕 Romantic</button>
+          <button class="mood-btn" data-mood="celebratory">🥳 Celebratory</button>
+          <button class="mood-btn" data-mood="cozy">☕ Cozy</button>
+          <button class="mood-btn" data-mood="adventurous">🌟 Adventurous</button>
+          <button class="mood-btn" data-mood="refreshing">🌿 Refreshing</button>
+        </div>
+        <div class="ai-result" id="aiResult" style="display:none;">
+          <div class="ai-result-inner">
+            <span class="ai-match-emoji" id="aiEmoji">🎂</span>
+            <div>
+              <strong id="aiCakeName">Loading...</strong>
+              <p id="aiCakeDesc">Finding your perfect match...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ CUSTOM CAKE DESIGNER ════════════════════════════════════════ -->
+<section class="designer-section" id="designer">
+  <div class="section-header">
+    <div class="section-tag">🎨 Design Studio</div>
+    <h2 class="section-title">Custom Cake <em>Designer</em></h2>
+    <p class="section-sub">Build your dream cake layer by layer with our interactive studio</p>
+  </div>
+
+  <div class="designer-layout">
+    <div class="designer-controls">
+      <div class="designer-step" id="step-shape">
+        <h4>1. Shape</h4>
+        <div class="option-grid">
+          <div class="option-card selected" data-group="shape" data-val="round">⭕ Round</div>
+          <div class="option-card" data-group="shape" data-val="square">⬛ Square</div>
+          <div class="option-card" data-group="shape" data-val="heart">❤️ Heart</div>
+          <div class="option-card" data-group="shape" data-val="tiered">🗼 Tiered</div>
+        </div>
+      </div>
+      <div class="designer-step">
+        <h4>2. Flavor</h4>
+        <div class="option-grid">
+          <div class="option-card selected" data-group="flavor" data-val="red-velvet">🍒 Red Velvet</div>
+          <div class="option-card" data-group="flavor" data-val="chocolate">🍫 Chocolate</div>
+          <div class="option-card" data-group="flavor" data-val="vanilla">🍦 Vanilla</div>
+          <div class="option-card" data-group="flavor" data-val="mango">🥭 Mango</div>
+          <div class="option-card" data-group="flavor" data-val="strawberry">🍓 Strawberry</div>
+          <div class="option-card" data-group="flavor" data-val="matcha">🍵 Matcha</div>
+        </div>
+      </div>
+      <div class="designer-step">
+        <h4>3. Frosting</h4>
+        <div class="option-grid">
+          <div class="option-card selected" data-group="frosting" data-val="buttercream">🧈 Buttercream</div>
+          <div class="option-card" data-group="frosting" data-val="fondant">🎭 Fondant</div>
+          <div class="option-card" data-group="frosting" data-val="ganache">🌑 Ganache</div>
+          <div class="option-card" data-group="frosting" data-val="whipped">☁️ Whipped</div>
+        </div>
+      </div>
+      <div class="designer-step">
+        <h4>4. Decoration</h4>
+        <div class="option-grid">
+          <div class="option-card selected" data-group="deco" data-val="flowers">🌸 Flowers</div>
+          <div class="option-card" data-group="deco" data-val="gold-leaf">✨ Gold Leaf</div>
+          <div class="option-card" data-group="deco" data-val="sprinkles">🌈 Sprinkles</div>
+          <div class="option-card" data-group="deco" data-val="berries">🫐 Berries</div>
+          <div class="option-card" data-group="deco" data-val="macarons">🍬 Macarons</div>
+          <div class="option-card" data-group="deco" data-val="candles">🕯️ Candles</div>
+        </div>
+      </div>
+      <div class="designer-step">
+        <h4>5. Tiers</h4>
+        <div class="tier-slider-wrap">
+          <input type="range" id="tierSlider" min="1" max="5" value="1" class="tier-slider" />
+          <span id="tierCount">1 Tier</span>
+        </div>
+      </div>
+      <div class="designer-step">
+        <h4>6. Color Palette</h4>
+        <div class="color-palette">
+          <div class="color-swatch selected" data-color="#f4c2c2" style="background:#f4c2c2;"></div>
+          <div class="color-swatch" data-color="#ffd700" style="background:#ffd700;"></div>
+          <div class="color-swatch" data-color="#c8a2c8" style="background:#c8a2c8;"></div>
+          <div class="color-swatch" data-color="#98ff98" style="background:#98ff98;"></div>
+          <div class="color-swatch" data-color="#87ceeb" style="background:#87ceeb;"></div>
+          <div class="color-swatch" data-color="#ff8c69" style="background:#ff8c69;"></div>
+          <div class="color-swatch" data-color="#deb887" style="background:#deb887;"></div>
+          <div class="color-swatch" data-color="#2c2c2c" style="background:#2c2c2c;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="designer-preview">
+      <div class="preview-canvas" id="previewCanvas">
+        <div class="preview-cake" id="previewCake">
+          <div class="cake-layer cake-layer-top" id="cakeTop"></div>
+          <div class="cake-layer cake-layer-mid" id="cakeMid" style="display:none;"></div>
+          <div class="cake-layer cake-layer-bot" id="cakeBot"></div>
+          <div class="cake-decoration" id="cakeDecoration">🌸</div>
+          <div class="cake-base"></div>
+        </div>
+        <div class="preview-plate">
+          <div class="plate-shadow"></div>
+        </div>
+      </div>
+      <div class="designer-summary" id="designerSummary">
+        <h4>Your Custom Cake</h4>
+        <div class="summary-tags" id="summaryTags"></div>
+        <div class="designer-price">
+          Estimated Price: <strong id="designerPrice">₹2,499</strong>
+        </div>
+        <button class="btn-primary" id="addDesignToCart">Add to Order 🛒</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ DELIVERY TRACKING ═══════════════════════════════════════════ -->
+<section class="tracking-section" id="tracking">
+  <div class="section-header">
+    <div class="section-tag">🚚 Live Tracking</div>
+    <h2 class="section-title">Order <em>Tracking</em></h2>
+    <p class="section-sub">Follow your cake's journey from our oven to your door</p>
+  </div>
+
+  <div class="tracking-layout">
+    <div class="tracking-search-card">
+      <h4>Track Your Order</h4>
+      <div class="tracking-input-row">
+        <input type="text" id="trackingInput" placeholder="Enter Order ID (e.g. SL-2024-001)" class="form-input" />
+        <button class="btn-primary" id="trackBtn">Track 🔍</button>
+      </div>
+      <div class="sample-ids">
+        <span>Sample IDs:</span>
+        <button class="sample-id-btn" onclick="document.getElementById('trackingInput').value='SL-2024-001'">SL-2024-001</button>
+        <button class="sample-id-btn" onclick="document.getElementById('trackingInput').value='SL-2024-002'">SL-2024-002</button>
+      </div>
+    </div>
+
+    <div class="tracking-result" id="trackingResult" style="display:none;">
+      <div class="tracking-order-info">
+        <div class="order-info-left">
+          <span class="order-id-badge" id="trackOrderId">SL-2024-001</span>
+          <h3 id="trackCakeName">Chocolate Truffle Cake</h3>
+          <p id="trackCustomer">For: Sarah Johnson</p>
+        </div>
+        <div class="order-info-right">
+          <div class="delivery-time-card">
+            <span class="time-label">ETA</span>
+            <span class="time-value" id="trackETA">14 min</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tracking-timeline">
+        <div class="timeline-step done" id="ts1">
+          <div class="ts-icon">✅</div>
+          <div class="ts-content">
+            <strong>Order Confirmed</strong>
+            <span>Today, 11:00 AM</span>
+          </div>
+        </div>
+        <div class="timeline-step done" id="ts2">
+          <div class="ts-icon">👨‍🍳</div>
+          <div class="ts-content">
+            <strong>Baking in Progress</strong>
+            <span>Today, 11:30 AM</span>
+          </div>
+        </div>
+        <div class="timeline-step active" id="ts3">
+          <div class="ts-icon">🎁</div>
+          <div class="ts-content">
+            <strong>Quality Check & Packaging</strong>
+            <span>Today, 1:45 PM</span>
+          </div>
+        </div>
+        <div class="timeline-step" id="ts4">
+          <div class="ts-icon">🚚</div>
+          <div class="ts-content">
+            <strong>Out for Delivery</strong>
+            <span>Estimated: 2:30 PM</span>
+          </div>
+        </div>
+        <div class="timeline-step" id="ts5">
+          <div class="ts-icon">🏠</div>
+          <div class="ts-content">
+            <strong>Delivered</strong>
+            <span>Estimated: 3:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="kitchen-status-card">
+        <h4>🧑‍🍳 Real-Time Kitchen Status</h4>
+        <div class="kitchen-stations">
+          <div class="station-card">
+            <div class="station-icon">🔥</div>
+            <div class="station-name">Baking Station</div>
+            <div class="station-load">
+              <div class="load-bar"><div class="load-fill" style="width:85%"></div></div>
+              <span>85% Capacity</span>
+            </div>
+          </div>
+          <div class="station-card active-station">
+            <div class="station-icon">🎨</div>
+            <div class="station-name">Decoration</div>
+            <div class="station-load">
+              <div class="load-bar"><div class="load-fill" style="width:60%"></div></div>
+              <span>60% Capacity</span>
+            </div>
+          </div>
+          <div class="station-card">
+            <div class="station-icon">📦</div>
+            <div class="station-name">Packaging</div>
+            <div class="station-load">
+              <div class="load-bar"><div class="load-fill" style="width:40%"></div></div>
+              <span>40% Capacity</span>
+            </div>
+          </div>
+          <div class="station-card">
+            <div class="station-icon">❄️</div>
+            <div class="station-name">Cold Storage</div>
+            <div class="station-load">
+              <div class="load-bar"><div class="load-fill" style="width:70%"></div></div>
+              <span>70% Capacity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ LOYALTY REWARDS ═════════════════════════════════════════════ -->
+<section class="loyalty-section" id="loyalty">
+  <div class="section-header">
+    <div class="section-tag">⭐ VIP Club</div>
+    <h2 class="section-title">Loyalty <em>Rewards</em></h2>
+    <p class="section-sub">Every sweet moment earns you points. Redeem for exclusive treats and discounts.</p>
+  </div>
+
+  <div class="loyalty-layout">
+    <div class="loyalty-card-main">
+      <div class="loyalty-card-bg"></div>
+      <div class="loyalty-card-content">
+        <div class="loyalty-tier-badge" id="loyaltyTierBadge">👑 Gold Member</div>
+        <div class="loyalty-customer-name">Sarah Johnson</div>
+        <div class="loyalty-card-id">SL-GOLD-00472</div>
+        <div class="loyalty-points-display">
+          <div class="points-big" id="loyaltyPoints">2,450</div>
+          <div class="points-label">Sweet Points</div>
+        </div>
+        <div class="loyalty-progress-bar">
+          <div class="loyalty-progress-fill" id="loyaltyFill" style="width:72%"></div>
+        </div>
+        <div class="loyalty-progress-text">550 pts to Platinum 👑</div>
+        <div class="qr-section">
+          <div class="qr-code-display" id="qrCode">
+            <div class="qr-grid" id="qrGrid"></div>
+          </div>
+          <div class="qr-info">
+            <strong>QR Billing</strong>
+            <p>Scan at checkout for instant points & payments</p>
+            <button class="btn-qr-download" id="downloadQR">⬇️ Save QR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="loyalty-rewards-panel">
+      <h4>Redeem Rewards</h4>
+      <div class="rewards-grid" id="rewardsGrid">
+        <!-- JS injected -->
+      </div>
+
+      <div class="points-history">
+        <h4>Points History</h4>
+        <div class="history-list" id="historyList">
+          <!-- JS injected -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tier-benefits">
+    <div class="tier-card tier-bronze">
+      <div class="tier-icon">🥉</div>
+      <h4>Bronze</h4>
+      <p>0 – 999 pts</p>
+      <ul>
+        <li>5% discount on all orders</li>
+        <li>Birthday cake surprise</li>
+        <li>Early access to seasonal menu</li>
+      </ul>
+    </div>
+    <div class="tier-card tier-silver">
+      <div class="tier-icon">🥈</div>
+      <h4>Silver</h4>
+      <p>1,000 – 1,999 pts</p>
+      <ul>
+        <li>10% discount on all orders</li>
+        <li>Free delivery on all orders</li>
+        <li>Monthly exclusive cake box</li>
+      </ul>
+    </div>
+    <div class="tier-card tier-gold active-tier">
+      <div class="tier-icon">🥇</div>
+      <h4>Gold</h4>
+      <p>2,000 – 2,999 pts</p>
+      <ul>
+        <li>15% discount on all orders</li>
+        <li>Priority baking queue</li>
+        <li>Dedicated cake consultant</li>
+        <li>Quarterly chef's special</li>
+      </ul>
+    </div>
+    <div class="tier-card tier-platinum">
+      <div class="tier-icon">💎</div>
+      <h4>Platinum</h4>
+      <p>3,000+ pts</p>
+      <ul>
+        <li>20% discount on all orders</li>
+        <li>VIP tasting events</li>
+        <li>Unlimited free decorations</li>
+        <li>Annual anniversary cake</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ INVENTORY MANAGEMENT ════════════════════════════════════════ -->
+<section class="inventory-section" id="inventory">
+  <div class="section-header">
+    <div class="section-tag">📦 Smart Inventory</div>
+    <h2 class="section-title">Ingredient <em>Intelligence</em></h2>
+    <p class="section-sub">AI-powered stock management with real-time alerts and predictive restocking</p>
+  </div>
+  <div class="inventory-grid" id="inventoryGrid">
+    <!-- JS injected -->
+  </div>
+  <div class="inventory-alerts" id="inventoryAlerts">
+    <!-- JS injected -->
+  </div>
+</section>
+
+<!-- ════════════════════════════ ANALYTICS DASHBOARD ═════════════════════════════════════════ -->
+<section class="dashboard-section" id="dashboard">
+  <div class="section-header">
+    <div class="section-tag">📊 Business Intelligence</div>
+    <h2 class="section-title">Analytics <em>Dashboard</em></h2>
+    <p class="section-sub">Real-time insights to grow your sweet empire</p>
+  </div>
+
+  <div class="kpi-row">
+    <div class="kpi-card">
+      <div class="kpi-icon">💰</div>
+      <div class="kpi-value" data-target="284500">₹0</div>
+      <div class="kpi-label">Monthly Revenue</div>
+      <div class="kpi-trend up">↗ +18.3%</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-icon">🎂</div>
+      <div class="kpi-value" data-target="847">0</div>
+      <div class="kpi-label">Orders This Month</div>
+      <div class="kpi-trend up">↗ +24.1%</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-icon">⭐</div>
+      <div class="kpi-value" data-target="4.9" data-decimal="1">0</div>
+      <div class="kpi-label">Avg. Rating</div>
+      <div class="kpi-trend up">↗ +0.2</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-icon">👥</div>
+      <div class="kpi-value" data-target="1247">0</div>
+      <div class="kpi-label">Active Members</div>
+      <div class="kpi-trend up">↗ +156</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-icon">🚚</div>
+      <div class="kpi-value" data-target="98">0</div>
+      <div class="kpi-label">On-Time Delivery %</div>
+      <div class="kpi-trend up">↗ +2.1%</div>
+    </div>
+  </div>
+
+  <div class="charts-layout">
+    <div class="chart-card chart-large">
+      <div class="chart-header">
+        <h4>Revenue Trends</h4>
+        <div class="chart-legend">
+          <span class="legend-dot" style="background:#d4a04a;"></span> This Year
+          <span class="legend-dot" style="background:#e8c9a0;"></span> Last Year
+        </div>
+      </div>
+      <div class="chart-canvas" id="revenueChart">
+        <svg viewBox="0 0 600 200" class="line-chart-svg" id="revenueSVG"></svg>
+      </div>
+    </div>
+
+    <div class="chart-card chart-small">
+      <div class="chart-header"><h4>Top Sellers</h4></div>
+      <div class="bar-chart" id="topSellersChart">
+        <!-- JS injected -->
+      </div>
+    </div>
+
+    <div class="chart-card chart-small">
+      <div class="chart-header"><h4>Order Distribution</h4></div>
+      <div class="donut-chart-wrap">
+        <svg viewBox="0 0 200 200" id="donutSVG" class="donut-svg"></svg>
+        <div class="donut-legend" id="donutLegend"></div>
+      </div>
+    </div>
+
+    <div class="chart-card chart-medium">
+      <div class="chart-header"><h4>Festival Demand Forecast</h4></div>
+      <div class="forecast-bars" id="forecastBars"></div>
+    </div>
+  </div>
+
+  <div class="recent-orders-table">
+    <div class="table-header">
+      <h4>Recent Orders</h4>
+      <div class="table-actions">
+        <input type="text" placeholder="Search orders..." class="table-search" id="orderSearch" />
+        <select class="table-filter" id="statusFilter">
+          <option value="all">All Status</option>
+          <option value="delivered">Delivered</option>
+          <option value="baking">Baking</option>
+          <option value="pending">Pending</option>
+        </select>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table class="orders-table" id="ordersTable">
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Customer</th>
+            <th>Cake</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="ordersTableBody">
+          <!-- JS injected -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════ ORDER SUCCESS MODAL ═════════════════════════════════════════ -->
+<div class="modal-overlay" id="orderModal" style="display:none;">
+  <div class="modal-card">
+    <div class="modal-confetti" id="modalConfetti"></div>
+    <div class="modal-icon">🎉</div>
+    <h3>Order Placed Successfully!</h3>
+    <p id="modalMsg">Your delicious cake is being prepared with love.</p>
+    <div class="modal-order-id" id="modalOrderId">Order #SL-2024-005</div>
+    <div class="modal-points-earned">
+      <span>🌟 Points Earned:</span>
+      <strong id="modalPoints">+250 pts</strong>
+    </div>
+    <div class="modal-qr-mini">
+      <div class="mini-qr" id="miniQR"></div>
+      <p>Scan for order tracking</p>
+    </div>
+    <button class="btn-primary" id="modalClose">Continue Shopping 🍰</button>
+  </div>
+</div>
+
+<!-- ════════════════════════════ CART SIDEBAR ════════════════════════════════════════════════ -->
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h3>🛒 Your Order</h3>
+    <button class="cart-close" id="cartClose">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <div class="cart-empty">
+      <span>🛒</span>
+      <p>Your cart is empty</p>
+      <small>Add some sweet treats!</small>
+    </div>
+  </div>
+  <div class="cart-footer" id="cartFooter" style="display:none;">
+    <div class="cart-subtotal">
+      <span>Subtotal</span>
+      <strong id="cartSubtotal">₹0</strong>
+    </div>
+    <div class="cart-discount">
+      <span>Gold Member Discount (15%)</span>
+      <strong id="cartDiscount">-₹0</strong>
+    </div>
+    <div class="cart-total">
+      <span>Total</span>
+      <strong id="cartTotal">₹0</strong>
+    </div>
+    <button class="btn-primary full-width" id="checkoutBtn">Proceed to Checkout 💳</button>
+  </div>
+</div>
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<!-- ════════════════════════════ FOOTER ══════════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">🍰 SweetLab</div>
+      <p>Where every bite tells a story. Premium artisan bakery crafting edible dreams since 2017.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn">📸</a>
+        <a href="#" class="social-btn">🐦</a>
+        <a href="#" class="social-btn">📘</a>
+        <a href="#" class="social-btn">🎵</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Quick Order</h5>
+      <ul>
+        <li><a href="#preorder">Cake Pre-Order</a></li>
+        <li><a href="#designer">Custom Designer</a></li>
+        <li><a href="#showcase">Browse Menu</a></li>
+        <li><a href="#tracking">Track Order</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>About Us</h5>
+      <ul>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Master Bakers</a></li>
+        <li><a href="#">Certifications</a></li>
+        <li><a href="#">Sustainability</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li>📍 42 Baker Street, Mumbai 400001</li>
+        <li>📞 +91 98765 43210</li>
+        <li>📧 hello@sweetlab.in</li>
+        <li>🕐 Mon–Sun: 8AM – 10PM</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 SweetLab. Crafted with 🍰 and ❤️. All rights reserved.</p>
+    <div class="footer-certifications">
+      <span>🌿 100% Natural</span>
+      <span>🥚 Eggless Options</span>
+      <span>🏆 Award-Winning</span>
+      <span>🚚 Same-Day Delivery</span>
+    </div>
+  </div>
+</footer>
+
+<div class="page-overlay" id="pageOverlay"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

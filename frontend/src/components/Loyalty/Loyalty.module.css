@@ -1,0 +1,81 @@
+.loyalty{background:var(--cream-200);padding:100px 0;}
+.sectionHeader{text-align:center;margin-bottom:52px;}
+.sectionTag{display:inline-flex;align-items:center;gap:6px;padding:8px 20px;background:var(--gold-100);color:var(--gold-700);border:1px solid rgba(212,148,58,.2);border-radius:var(--radius-full);font-size:.78rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px;}
+.sectionTitle{font-family:var(--font-serif);font-size:clamp(2rem,4vw,3rem);font-weight:700;color:var(--color-text);line-height:1.15;margin-bottom:14px;letter-spacing:-.02em;}
+.sectionTitle em{font-style:italic;color:var(--gold-500);}
+.sectionSub{font-size:1rem;color:var(--color-text-secondary);max-width:560px;margin:0 auto;}
+
+.notification{text-align:center;padding:12px 24px;border-radius:var(--radius-full);font-size:.9rem;font-weight:600;margin-bottom:24px;animation:fadeDown .3s var(--ease-out);}
+.notif_success{background:#e8f5e9;color:#2e7d32;border:1px solid #c8e6c9;}
+.notif_error{background:#fce4ec;color:#c62828;border:1px solid #f8bbd9;}
+
+.layout{display:grid;grid-template-columns:440px 1fr;gap:32px;margin-bottom:60px;align-items:start;}
+
+/* Loyalty Card */
+.cardWrap{}
+.loyaltyCard{position:relative;border-radius:var(--radius-xl);overflow:hidden;min-height:540px;background:linear-gradient(145deg,#1a1005 0%,#3d2810 50%,#5c3d1e 100%);box-shadow:var(--shadow-xl);}
+.cardBg{position:absolute;inset:0;background:radial-gradient(circle at 30% 40%,rgba(212,148,58,.25),transparent 60%),radial-gradient(circle at 80% 70%,rgba(212,132,58,.2),transparent 50%);pointer-events:none;}
+.cardContent{position:relative;z-index:1;padding:36px;color:#fff;}
+.cardTop{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;}
+.tierBadge{font-size:.82rem;font-weight:700;letter-spacing:.5px;}
+.sweetlabLogo{font-family:var(--font-serif);font-size:1rem;opacity:.7;}
+.customerName{font-family:var(--font-serif);font-size:1.6rem;font-weight:700;margin-bottom:4px;}
+.cardId{font-size:.72rem;opacity:.5;letter-spacing:1.5px;font-family:var(--font-mono);margin-bottom:28px;}
+.pointsDisplay{margin-bottom:12px;}
+.pointsBig{font-family:var(--font-serif);font-size:3.5rem;font-weight:700;color:var(--gold-300);line-height:1;display:block;}
+.pointsLabel{font-size:.82rem;opacity:.75;margin-top:4px;display:block;}
+.progressBar{height:8px;background:rgba(255,255,255,.15);border-radius:4px;margin:14px 0 8px;overflow:hidden;}
+.progressFill{height:100%;background:linear-gradient(to right,var(--gold-300),var(--gold-500));border-radius:4px;transition:width 1.5s ease;}
+.progressText{font-size:.78rem;opacity:.7;margin-bottom:28px;}
+.qrSection{display:flex;gap:16px;align-items:flex-start;}
+.qrBox{width:96px;height:96px;background:#fff;border-radius:10px;padding:8px;flex-shrink:0;}
+.qrGrid{display:grid;gap:1px;width:100%;height:100%;}
+.qrCell{border-radius:1px;}
+.qrInfo strong{display:block;color:var(--gold-300);margin-bottom:5px;font-size:.85rem;}
+.qrInfo p{font-size:.72rem;opacity:.7;line-height:1.4;margin-bottom:10px;}
+.qrBtn{padding:7px 14px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:var(--radius-full);color:#fff;font-size:.75rem;font-weight:600;transition:background var(--duration-base);}
+.qrBtn:hover{background:rgba(255,255,255,.22);}
+
+/* Right Panel */
+.rightPanel{display:flex;flex-direction:column;gap:28px;}
+.subTitle{font-family:var(--font-serif);font-size:1.1rem;color:var(--color-text);margin-bottom:18px;}
+
+.rewardsSection{}
+.rewardsGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.rewardCard{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:18px;text-align:center;transition:all var(--duration-base);}
+.rewardCard:hover{border-color:var(--gold-400);transform:translateY(-4px);box-shadow:var(--shadow-md);}
+.rewardIcon{font-size:1.8rem;margin-bottom:8px;}
+.rewardTitle{font-size:.85rem;font-weight:700;color:var(--color-text);margin-bottom:4px;}
+.rewardDesc{font-size:.72rem;color:var(--color-text-muted);margin-bottom:10px;line-height:1.4;}
+.rewardPts{font-size:.78rem;font-weight:700;color:var(--gold-600);margin-bottom:10px;}
+.redeemBtn{display:block;width:100%;padding:8px;background:var(--gold-100);color:var(--gold-700);border-radius:var(--radius-full);font-size:.75rem;font-weight:600;transition:all var(--duration-base);}
+.redeemBtn:hover:not(.disabled){background:linear-gradient(135deg,var(--gold-500),var(--gold-600));color:#fff;}
+.disabled{opacity:.6;cursor:not-allowed;font-size:.68rem;}
+
+.historySection{}
+.historyList{display:flex;flex-direction:column;gap:8px;}
+.historyItem{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-sm);}
+.historyLeft{display:flex;align-items:center;gap:12px;}
+.histIcon{font-size:1.2rem;}
+.histAction{font-size:.85rem;font-weight:500;color:var(--color-text);}
+.histDate{font-size:.72rem;color:var(--color-text-muted);}
+.histPts{font-weight:700;font-size:.9rem;}
+.earn{color:var(--color-success);}
+.spend{color:var(--color-error);}
+
+/* Tiers */
+.tiersGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.tierCard{background:var(--color-surface);border:1.5px solid var(--color-border);border-radius:var(--radius-lg);padding:28px;text-align:center;transition:all var(--duration-slow);}
+.tierCard:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);}
+.tierActive{border-color:var(--gold-500);box-shadow:0 8px 32px rgba(212,148,58,.2);background:linear-gradient(145deg,var(--gold-50),var(--cream-100));}
+.tierIcon{font-size:2.4rem;margin-bottom:12px;}
+.tierName{font-family:var(--font-serif);font-size:1.1rem;color:var(--color-text);margin-bottom:4px;}
+.tierRange{font-size:.75rem;color:var(--gold-600);font-weight:600;margin-bottom:16px;}
+.tierPerks{display:flex;flex-direction:column;gap:7px;text-align:left;}
+.tierPerks li{font-size:.8rem;color:var(--color-text-secondary);padding-left:16px;position:relative;}
+.tierPerks li::before{content:'✓';position:absolute;left:0;color:var(--gold-500);font-weight:700;}
+.currentTierBadge{margin-top:14px;padding:5px 12px;background:linear-gradient(135deg,var(--gold-500),var(--gold-600));color:#fff;border-radius:var(--radius-full);font-size:.7rem;font-weight:700;display:inline-block;}
+
+@media(max-width:1100px){.layout{grid-template-columns:1fr;}.tiersGrid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:768px){.rewardsGrid{grid-template-columns:repeat(2,1fr);}.tiersGrid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:480px){.rewardsGrid{grid-template-columns:1fr;}.tiersGrid{grid-template-columns:1fr;}}
